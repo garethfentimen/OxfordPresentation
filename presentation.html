@@ -12,8 +12,36 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>Slide 1</section>
-                <section>Slide 2</section>
+                <section>
+                    <h3>The MARS Project</h3>
+                    <h4>Making administrating Research Simpler</h4>
+                    <p>Before the Project was paused, the UI side of the project was 70% complete, with only 4 bugs outstanding and with only one known regression.
+                        All in less than 4 sprints...
+                    </p>
+                    <p>How was that possible?</p>
+                    <img src="./Earth and Moon.jpg" width="40%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
+                    <p style="font-size: 60%">Above: Earth and the moon as viewed from the Mars orbiter</p>
+                </section>
+                <section data-transition="fade-in">
+                    <h3>Continuous Integration</h3>
+                    <p>When a commit is made a project "build" is kicked off</p>
+                    <p>This means that the source code is delivered to a machine (could be a Cloud based Virtual Machine) and rebuilt from scratch</p>
+                    <p>This sounds like a small gain, but how many times have you committed code that doesn't work on a colleagues machine or worse on the Test server - I know I certainly have many times ;) more about this later..</p>
+                    <img src="./works-on-my-machine-stamped.png" width="10%" alt="Stamp - works on my machine!" title="Stamp - works on my machine!" />
+                </section>
+                <section data-transition="fade-in">
+                    <img src="./it_works_on_my_machine_retro_style_t_shirt.jpg"
+                    <p>etc..</p>
+                </section>
+                <section data-transition="fade-in">
+                    <h3>The Dependency Injection Design Pattern Using Constructor-based Injection</h3>
+                    <p>This means that the coupling between classes is explicitly made during the web project startup routine</p>
+                    <p>This helps us to "prefer composition over inheritance" when we share dependent code. It also helps us to keep to the <i>principal of least knowledge</i></p>
+                    <img src="./dont_talk_strangers.gif" />
+                </section>
+                <section data-transition="fade-in">
+                    <p>It also has another beneficial side effect - it makes it easier to unit test the business logic</p>
+                </section>
             </div>
         </div>
 
