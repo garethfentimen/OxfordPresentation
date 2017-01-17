@@ -4,6 +4,7 @@
         <title>
             A tour around the MARS (Making Administrating Research Simpler) project, the use of Test Driven Development and how it is made easier by using Interfaces and DI (Dependency Injection).
         </title>
+        <link rel="stylesheet" type="text/css" href="./presentation.css" />
         <link rel="stylesheet" type="text/css" href="./reveal/reveal.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/reveal.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/white.css">
@@ -15,24 +16,31 @@
                 <section>
                     <h3>The MARS Project</h3>
                     <h4>Making administrating Research Simpler</h4>
-                    <p>Before the Project was paused, the UI side of the project was 70% complete, with only 4 bugs outstanding and with only one known regression.
+                    <p class="fragment slideright">Before the Project was paused, the UI side of the project was 70% complete, with only 4 bugs outstanding and with only one known regression.
                         All in less than 4 sprints...
                     </p>
-                    <p>How was that possible?</p>
-                    <img src="./Earth and Moon.jpg" width="40%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
-                    <p style="font-size: 60%">Above: Earth and the moon as viewed from the Mars orbiter</p>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom">How was that possible?</p>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom">How was the project able to gain so much momentum in such a small space of time?</p>
+                    <!--<img src="./Earth and Moon.jpg" width="40%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
+                    <p style="font-size: 60%">Above: Earth and the moon as viewed from the Mars orbiter</p>-->
                 </section>
                 <section data-transition="fade-in">
                     <h3>Continuous Integration</h3>
-                    <p>When a commit is made a project "build" is kicked off</p>
-                    <p>This means that the source code is delivered to a machine (could be a Cloud based Virtual Machine) and rebuilt from scratch</p>
-                    <p>This sounds like a small gain, but how many times have you committed code that doesn't work on a colleagues machine or worse on the Test server</p>
-                    <p>I know I certainly have many times ;) more about this later..</p>
+                    <ul>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom">When a commit is made to a particular branch a project "build" is started. This branch could be just the general dev branch or it could be a dedicated release branch</li>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom">The source code is delivered to a "build machine" to be built and unit tested from scratch</li>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom">This sounds like a small gain, but how many times have you committed code that doesn't work on a colleagues machine or on the Test server?</li>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom">I know I certainly have many times ;) more about this later..</li>
+                    </ul>
                     <img src="./works-on-my-machine-stamped.png" width="10%" alt="Stamp - works on my machine!" title="Stamp - works on my machine!" />
                 </section>
                 <section data-transition="fade-in">
-                    <img src="./it_works_on_my_machine_retro_style_t_shirt.jpg"
-                    <p>etc..</p>
+                    <img src="./it_works_on_my_machine_retro_style_t_shirt.jpg" />
+                </section>
+                <section data-transition="fade-in">
+                    <h3>Continuous Deployment</h3>
+                    <p class="fragment" data-autoslide="10000">When a commit is made and the resulting build process is successful then the Test Environmetn owner is asked whether it is OK to update the environment with the new change.</P>
+                    <p class="fragment" data-autoslide="10000">As long as there is no critical reason why a feature cannot go into</p>
                 </section>
                 <section data-transition="fade-in">
                     <h3>The Dependency Injection Design Pattern Using Constructor-based Injection</h3>
@@ -48,6 +56,7 @@
 
 
         <script type="text/javascript" src="./reveal/js/reveal.min.js"></script>
+        <script type="text/javascript" src="./polyfills.js"></script>
         <script type="text/javascript" src="./presentation.js"></script>
     </body>
 </html>
