@@ -15,41 +15,76 @@
             <div class="slides">
                 <section>
                     <h3>The MARS Project</h3>
-                    <h4>Making administrating Research Simpler</h4>
-                    <p class="fragment slideright">Before the Project was paused, the UI side of the project was 70% complete, with only 4 bugs outstanding and with only one known regression.
-                        All in less than 4 sprints...
+                    <p style="font-size: 80%;">Making administrating Research Simpler</p>
+                    <div>
+                        <img src="./MARS_backlog_items.png" width="19%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
+                    </div>
+                    <p class="fragment slideright">
+                        The UI for the MARS project was 70% complete, with only 4 bugs outstanding and with only one known regression. In less than 4 sprints...
                     </p>
-                    <p class="fragment" data-autoslide="10000" data-transition="zoom">How was that possible?</p>
-                    <p class="fragment" data-autoslide="10000" data-transition="zoom">How was the project able to gain so much momentum in such a small space of time?</p>
-                    <!--<img src="./Earth and Moon.jpg" width="40%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
-                    <p style="font-size: 60%">Above: Earth and the moon as viewed from the Mars orbiter</p>-->
                 </section>
-                <section data-background="#934f4d" data-transition="fade-in">
-                    <h3>Continuous Integration</h3>
+                <section data-background="#934f4d" data-transition="zoom">
+                    <p data-autoslide="10000">How was the project able to gain so much momentum in such a small space of time?</p>
+                </section>
+                <section data-background="./bgImage1.jpg" data-transition="convex">
+                    <h3>1. Continuous Integration</h3>
                     <ul>
                         <li class="fragment" data-autoslide="10000" data-transition="zoom">When a commit is made to a particular branch a project "build" is started. This branch could be just the general dev branch or it could be a dedicated release branch</li>
                         <li class="fragment" data-autoslide="10000" data-transition="zoom">The source code is delivered to a "build machine" to be built and unit tested from scratch</li>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom">This sounds like a small gain, but how many times have you committed code that doesn't work on a colleagues machine or on the Test server?</li>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom">I know I certainly have many times ;) more about this later..</li>
                     </ul>
-                    <img src="./works-on-my-machine-stamped.png" width="10%" alt="Stamp - works on my machine!" title="Stamp - works on my machine!" />
+                    <img class="fragment" src="./works-on-my-machine-stamped.png" width="10%" alt="Stamp - works on my machine!" title="Stamp - works on my machine!" />
+                </section>
+                <section data-transition="concave">
+                    <img width="90%" src="./it_works_on_my_machine_retro_style_t_shirt.jpg" />
                 </section>
                 <section data-transition="fade-in">
-                    <img src="./it_works_on_my_machine_retro_style_t_shirt.jpg" />
+                    <h3>2. Continuous Deployment</h3>
+                    <ul>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-autoslide="10000">
+                            When a commit is made and the resulting build process is successful then the Test Environment owner is asked whether it is OK to update the environment with the new change.
+                        </li>
+                        <li class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-autoslide="10000">
+                            As long as there is no critical reason why a feature cannot go into the Test environment then an automatic deploy is started
+                        </li>
+                    </ul>
                 </section>
-                <section data-transition="fade-in">
-                    <h3>Continuous Deployment</h3>
-                    <p class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-background-transition="concave" data-autoslide="10000">When a commit is made and the resulting build process is successful then the Test Environmetn owner is asked whether it is OK to update the environment with the new change.</P>
-                    <p class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-background-transition="convex" data-autoslide="10000">As long as there is no critical reason why a feature cannot go into</p>
-                </section>
-                <section data-background="#934f4d" data-transition="fade-in">
-                    <h3>The Dependency Injection Design Pattern Using Constructor-based Injection</h3>
-                    <p class="fragment" data-autoslide="10000" data-transition="zoom"> This means that the coupling between classes is explicitly made during the web project startup routine</p>
+                <section data-background="#801818" data-transition="fade-in">
+                    <h4>3. Using The Dependency Injection Design Pattern Using Constructor-based Injection</h4>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom">This means that the coupling between classes is explicitly made during the web project startup routine</p>
                     <p class="fragment" data-autoslide="10000" data-transition="zoom">This helps us to "prefer composition over inheritance" when we share dependent code. It also helps us to keep to the <i>principal of least knowledge</i></p>
                     <img src="./dont_talk_strangers.gif" />
                 </section>
+                <section data-transition="concave">
+                    <p>Other beneficial side effects?</p>
+                    <ul>
+                        <li class="fragment">It is easier to unit test our business logic</li>
+                        <li class="fragment">Avoiding the new keyword reduces the temptation to do too much in the constructor</li>
+                    </ul>
+                </section>
+
                 <section data-transition="fade-in">
-                    <p>Another beneficial side effect? It is easier to unit test the business logic</p>
+                    <p>Problems with the DI pattern</p>
+                    <ul>
+                        <li class="fragment">Busy constructors in classes and controllers</li>
+                    </ul>
+                </section>
+                <section data-transition="concave">
+                    <p>5. Maintain Good Code Conventions - General Points</p>
+                    <ul>
+                        <li class="fragment">Classes are capitalised, function parameters are lowercase, just always</li>
+                        <li class="fragment">Boy scouting and the "don't be part of the problem" attitude</li>
+                        <li class="fragment">DRY - Try not mindlessly copy and paste code</li>
+                        <li class="fragment">Avoid Pointless abbreviations...</li>
+                    </ul>
+                </section>
+                <section data-transition="fade-in">
+                    <h3>And Finally Some Profound Coderisms</h3>
+                    <p class="fragment">Joanna's favourite: "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live" Rick Osbourne</p>
+                    <p class="fragment">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand" Martin Fowler</p>
+                    <p class="fragment">"Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?' Improve the code and then document it to make it even clearer"" Steve McConnell</p>
+                </section>
+                <section data-transition="convex">
+                    <p>"The best method for accelerating a computer is the one that boosts it by 9.8 m/s2." Anon</p>
                 </section>
             </div>
         </div>

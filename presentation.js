@@ -1,10 +1,13 @@
 (function(reveal) {
     reveal.initialize({
-
+        mouseWheel: true,
         dependencies: [ 
             { src: './plugin/notes/notes.js', async: true } 
         ]
     });
+
+    // Turn autoSlide off
+    reveal.configure({ autoSlide: 0 });
 
     var slideRightClassName = "slideright",
         showClass = "show",
