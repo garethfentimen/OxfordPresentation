@@ -1,5 +1,10 @@
 (function(reveal) {
-    reveal.initialize();
+    reveal.initialize({
+
+        dependencies: [ 
+            { src: './plugin/notes/notes.js', async: true } 
+        ]
+    });
 
     var slideRightClassName = "slideright",
         showClass = "show",
@@ -23,6 +28,8 @@
         {
             this.fragment.classList.add(showClass);
         }
+
+        RevealNotes.postNotes();
     });
 
     reveal.addEventListener('fragmenthidden', function( event ) {
@@ -42,6 +49,3 @@
         }
     });
 })(Reveal);
-
-
-// polyfills

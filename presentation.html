@@ -24,7 +24,7 @@
                     <!--<img src="./Earth and Moon.jpg" width="40%" alt="Earth and the moon as viewed from the Mars orbiter" title="Earth and the moon as viewed from the Mars orbiter" />
                     <p style="font-size: 60%">Above: Earth and the moon as viewed from the Mars orbiter</p>-->
                 </section>
-                <section data-transition="fade-in">
+                <section data-background="#934f4d" data-transition="fade-in">
                     <h3>Continuous Integration</h3>
                     <ul>
                         <li class="fragment" data-autoslide="10000" data-transition="zoom">When a commit is made to a particular branch a project "build" is started. This branch could be just the general dev branch or it could be a dedicated release branch</li>
@@ -39,13 +39,13 @@
                 </section>
                 <section data-transition="fade-in">
                     <h3>Continuous Deployment</h3>
-                    <p class="fragment" data-autoslide="10000">When a commit is made and the resulting build process is successful then the Test Environmetn owner is asked whether it is OK to update the environment with the new change.</P>
-                    <p class="fragment" data-autoslide="10000">As long as there is no critical reason why a feature cannot go into</p>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-background-transition="concave" data-autoslide="10000">When a commit is made and the resulting build process is successful then the Test Environmetn owner is asked whether it is OK to update the environment with the new change.</P>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-background-transition="convex" data-autoslide="10000">As long as there is no critical reason why a feature cannot go into</p>
                 </section>
-                <section data-transition="fade-in">
+                <section data-background="#934f4d" data-transition="fade-in">
                     <h3>The Dependency Injection Design Pattern Using Constructor-based Injection</h3>
-                    <p>This means that the coupling between classes is explicitly made during the web project startup routine</p>
-                    <p>This helps us to "prefer composition over inheritance" when we share dependent code. It also helps us to keep to the <i>principal of least knowledge</i></p>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom"> This means that the coupling between classes is explicitly made during the web project startup routine</p>
+                    <p class="fragment" data-autoslide="10000" data-transition="zoom">This helps us to "prefer composition over inheritance" when we share dependent code. It also helps us to keep to the <i>principal of least knowledge</i></p>
                     <img src="./dont_talk_strangers.gif" />
                 </section>
                 <section data-transition="fade-in">
@@ -56,6 +56,7 @@
 
 
         <script type="text/javascript" src="./reveal/js/reveal.min.js"></script>
+        <script type="text/javascript" src="./reveal/js/head.min.js"></script>
         <script type="text/javascript" src="./polyfills.js"></script>
         <script type="text/javascript" src="./presentation.js"></script>
     </body>
