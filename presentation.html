@@ -56,7 +56,7 @@
                     </ul>
                     <img class="fragment" data-autoslide="10000" src="./dont_talk_strangers.gif" />
                 </section>
-                <section  class="align-left" data-transition="concave">
+                <section class="align-left" data-background="#801818" data-transition="concave">
                     <h4>Other beneficial side effects?</h4>
                     <ul>
                         <li class="fragment">It is easier to unit test our business logic</li>
@@ -66,8 +66,24 @@
                 <section  class="align-left" data-background="#801818" data-transition="fade-in">
                     <h4>Problems with the DI pattern</h4>
                     <ul>
-                        <li class="fragment">Busy constructors in classes and controllers</li>
+                        <li class="fragment">Busy constructors in classes and controllers which grow</li>
                         <li class="fragment">Tooo many classes!</li>
+                    </ul>
+                </section>
+                <section data-background="./bgImage1.jpg">
+                    <h4>4. The Mediator Pattern and Command Query Separation</h4>
+                    <img class="fragment" src="./CQS.jpg" />
+                </section>
+                <section data-background="./bgImage1.jpg">
+                    <h4>4. The Mediator Pattern and Command Query Separation continued...</h4>
+                    <img class="fragment" src="./CleanerControllerConstructor.jpg" />
+                </section>
+                <section data-background="./bgImage1.jpg">
+                    <h4>4. The Mediator Pattern and Command Query Separation continued...</h4>
+                    <ul>
+                        <li class="fragment">So MediatR uses generics to request a particular Query or Command class</li>
+                        <li class="fragment">We can chain the Querys and Commands which shows a clear order for our events</li>
+                        <li class="fragment">This encourages a reduction in coupling to such an extent that we can increase Code reuse</li>
                     </ul>
                 </section>
                 <section class="align-left" data-background="./bgImage1.jpg" data-transition="concave">
@@ -76,6 +92,7 @@
                         <li class="fragment">Classes are capitalised, function parameters are lowercase, just always</li>
                         <li class="fragment">Boy scouting and the "don't be part of the problem" attitude</li>
                         <li class="fragment">DRY - Try not mindlessly copy and paste code</li>
+                        <li class="fragment">Make the Code, particularly in Controllers, read and flow well...</li>
                         <li class="fragment">Avoid Pointless abbreviations...</li>
                     </ul>
                 </section>
