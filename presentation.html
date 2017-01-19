@@ -17,7 +17,7 @@
                     <h3>The MARS Project</h3>
                     <h4 style="font-size: 80%;">Making administrating Research Simpler</h4>
                     <div>
-                        <img src="./MARS_backlog_items_now.jpg" width="20%" alt="MARS Pie Chart" title="MARS Pie Chart" />
+                        <img src="./MARS_backlog_items_now.jpg" width="35%" alt="MARS Pie Chart" title="MARS Pie Chart" />
                     </div>
                     <p class="fragment slideright">
                         The UI for the MARS project was 70% complete, with only 4 bugs outstanding and with only one known regression. In less than 4 sprints...
@@ -29,10 +29,10 @@
                 <section class="align-left" data-background="./bgImage1.jpg" data-transition="convex">
                     <h3>1. Continuous Integration</h3>
                     <ul>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom">When a commit is made to a particular branch a project "build" is started. This branch could be just the general dev branch or it could be a dedicated release branch</li>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom">The source code is delivered to a "build machine" to be built and unit tested from scratch</li>
+                        <li class="fragment">Project Builds Automatically</li>
+                        <li class="fragment">General/Development branch and Dedicated release branch</li>
+                        <li class="fragment">Source code is delivered to "build machine" to be built and unit tested</li>
                     </ul>
-                    <img class="fragment" src="./works-on-my-machine-stamped.png" width="10%" alt="Stamp - works on my machine!" title="Stamp - works on my machine!" />
                 </section>
                 <section data-transition="concave">
                     <img width="90%" src="./it_works_on_my_machine_retro_style_t_shirt.jpg" />
@@ -40,31 +40,32 @@
                 <section class="align-left" data-background="./bgImage1.jpg" data-transition="fade-in">
                     <h3>2. Continuous Deployment</h3>
                     <ul>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-autoslide="10000">
-                            When a commit is made and the resulting build process is successful then the Test Environment owner is asked whether it is OK to update the environment with the new change.
-                        </li>
-                        <li class="fragment" data-autoslide="10000" data-transition="zoom" class="fragment" data-autoslide="10000">
-                            As long as there is no critical reason why a feature cannot go into the Test environment then an automatic deploy is started
+                        <li class="fragment" class="fragment" data-autoslide="10000">Gatekeeping process</li>
+                        <li class="fragment" class="fragment" data-autoslide="10000">
+                            Automatic Deployment
                         </li>
                     </ul>
                 </section>
-                <section  class="align-left" data-background="./bgImage1.jpg" data-transition="zoom">
+                <section class="align-left" data-background="./bgImage1.jpg" data-transition="zoom">
                     <h4>3. Using The Dependency Injection Design Pattern Using Constructor-based Injection</h4>
                     <ul>
-                        <li class="fragment" data-autoslide="10000">This means that the coupling between classes is explicitly made during the web project startup routine</p>
-                        <li class="fragment" data-autoslide="10000">This helps us to "prefer composition over inheritance" when we share dependent code. It also helps us to keep to the <i>principal of least knowledge</i></p>
+                        <li class="fragment">Coupling between classes is explicitly made during the web project startup routine</p>
+                        <li class="fragment"><i>prefer composition over inheritance</i> when we share dependent code</p>
+                        <li class="fragment"><i>principal of least knowledge</i></li>
                     </ul>
                     <img class="fragment" data-autoslide="10000" src="./dont_talk_strangers.gif" />
                 </section>
-                <section class="align-left" data-background="#801818" data-transition="concave">
-                    <h4>Other beneficial side effects?</h4>
+                <section class="align-left" data-background="./bgImage1.jpg" data-transition="zoom">
+                    <h4>3. Using The Dependency Injection Design Pattern Using Constructor-based Injection Continued...</h4>
+                    <p>Other benefits</p>
                     <ul>
-                        <li class="fragment">It is easier to unit test our business logic</li>
-                        <li class="fragment">Avoiding the new keyword reduces the temptation to do too much in the constructor</li>
+                        <li class="fragment">Easier to unit test our business logic, interface</li>
+                        <li class="fragment">New keyword reduces the temptation to do too much in the constructor</li>
                     </ul>
                 </section>
-                <section  class="align-left" data-background="#801818" data-transition="fade-in">
-                    <h4>Problems with the DI pattern</h4>
+                <section class="align-left" data-background="#801818" data-transition="fade-in">
+                    <h4>3. Using The Dependency Injection Design Pattern Using Constructor-based Injection Continued...</h4>
+                    <p>Problems with the DI pattern</p>
                     <ul>
                         <li class="fragment">Busy constructors in classes and controllers which grow</li>
                         <li class="fragment">Tooo many classes!</li>
@@ -82,8 +83,8 @@
                     <h4>4. The Mediator Pattern and Command Query Separation continued...</h4>
                     <ul>
                         <li class="fragment">So MediatR uses generics to request a particular Query or Command class</li>
-                        <li class="fragment">We can chain the Querys and Commands which shows a clear order for our events</li>
-                        <li class="fragment">This encourages a reduction in coupling to such an extent that we can increase Code reuse</li>
+                        <li class="fragment">We can chain the Querys and Commands - clear order for our events</li>
+                        <li class="fragment">Increase Code reuse</li>
                     </ul>
                 </section>
                 <section class="align-left" data-background="./bgImage1.jpg" data-transition="concave">
@@ -100,7 +101,7 @@
                     <h3>And Finally Some Profound Coderisms</h3>
                     <p class="fragment">Joanna's favourite: "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live" Rick Osbourne</p>
                     <p class="fragment">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand" Martin Fowler</p>
-                    <p class="fragment">"Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?' Improve the code and then document it to make it even clearer"" Steve McConnell</p>
+                    <p class="fragment">"Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?' Improve the code and then document it to make it even clearer" Steve McConnell</p>
                 </section>
                 <section class="align-left" data-transition="convex">
                     <p>"The best method for accelerating a computer is the one that boosts it by 9.8 m/s squared." Anon</p>
